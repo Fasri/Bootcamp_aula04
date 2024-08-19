@@ -14,14 +14,21 @@
 
 
 # 3.Crie um dicionário para armazenar informações de um livro, incluindo título, autor e ano de publicação. Imprima cada informação.
-livro1 ={
-    "Titulo":"Psicologia Financeira",
-    "Autor":"Caleb",
-    "Ano de publicação": 2009
-}
+# livro1 ={
+#     "Titulo":"Psicologia Financeira",
+#     "Autor":"Caleb",
+#     "Ano de publicação": 2009
+# }
 
-print(livro1)
-for chave, valor in livro1.items():
-    print(f"{chave}:{valor}")
+# print(livro1)
+# for chave, valor in livro1.items():
+#     print(f"{chave}:{valor}")
 # 4.Escreva um programa que conta o número de ocorrências de cada caractere em uma string usando um dicionário.
+def contar_caracteres(s):
+    contagem = {}
+    for caractere in s:
+        contagem[caractere] = contagem.get(caractere, 0) + 1
+    return contagem
+
+print(contar_caracteres("engenharia de dados"))
 # 5.Dada a lista ["maçã", "banana", "cereja"] e o dicionário {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}, calcule o preço total da lista de compras.
