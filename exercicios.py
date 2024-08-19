@@ -91,11 +91,26 @@
 # Atualização de Dados
 # 11. Dada uma lista de dicionários representando produtos, 
 # atualizar o preço de um produto específico.
-produtos = [{"Produto": "Geladeira","Preço":23},
-            {"Produto": "Cafeteira","Preço":15}, 
-            {"Produto": "Televisão","Preço":45}]
+# produtos = [{"Produto": "Geladeira","Preço":23},
+#             {"Produto": "Cafeteira","Preço":15}, 
+#             {"Produto": "Televisão","Preço":45}]
 
-for produto in produtos:
-    if produto["Produto"]=="Cafeteira":
-        produto["Preço"] = 69
-print(produtos)
+# for produto in produtos:
+#     if produto["Produto"]=="Cafeteira":
+#         produto["Preço"] = 69
+# print(produtos)
+
+# Fusão de Dicionários
+# 12. Dados dois dicionários, fundi-los em um único dicionário.
+
+dicionario1 = {
+    "Produt1":"Ferro",
+    "Preço1":23
+}
+dicionario2 = {
+    "Produto":"Regador",
+    "Preço":5
+}
+
+dicionario1.update(dicionario2)
+print (dicionario1)
