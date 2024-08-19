@@ -65,10 +65,25 @@
 # ]
 # pessoas.sort(key=lambda pessoa: pessoa["nome"])
 
-# print(pessoas)
+# print(pessoas)e
 
 # Agregação de Dados
-# Dado um conjunto de números, calcular a média.
-numeros = [2,9,8,3,5,8,4,7]
-media = sum(numeros)/len(numeros)
-print(media)
+# 9.Dado um conjunto de números, calcular a média.
+# numeros = [2,9,8,3,5,8,4,7]
+# media = sum(numeros)/len(numeros)
+# print(media)
+
+# Divisão de Dados em Grupos
+# 10. Dada uma lista de valores, dividir em duas listas: 
+# uma para valores pares e outra para ímpares.
+
+numeros = [1,2,3,4,5,6,7,8,9,10]
+pares=[]
+impares = []
+for numero in numeros:
+    if numero%2 == 0:
+        pares.append(numero)
+    else:
+        impares.append(numero)
+print(pares)
+print(impares)
