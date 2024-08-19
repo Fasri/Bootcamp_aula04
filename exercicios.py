@@ -47,11 +47,22 @@
 
 #Filtragem de Dados
 #7.Dada uma lista de idades, filtrar apenas aquelas que são maiores ou iguais a 18.
-idades = [4.6,90,45,34,56,3,25]
-maiores=[]
-for idade in idades:
-    if idade>18:
-        maiores.append(idade)
-    else:
-        maiores
-print(maiores)
+# idades = [4.6,90,45,34,56,3,25]
+# maiores=[]
+# for idade in idades:
+#     if idade>18:
+#         maiores.append(idade)
+#     else:
+#         maiores
+# print(maiores)
+
+# Ordenação Personalizada
+# 8.Dada uma lista de dicionários representando pessoas, ordená-las pelo nome.
+pessoas = [
+    {"nome": "Alice", "idade": 30},
+    {"nome": "Bob", "idade": 25},
+    {"nome": "Carol", "idade": 20}
+]
+pessoas.sort(key=lambda pessoa: pessoa["nome"])
+
+print(pessoas)
