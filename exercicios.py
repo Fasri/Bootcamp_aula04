@@ -58,11 +58,17 @@
 
 # Ordenação Personalizada
 # 8.Dada uma lista de dicionários representando pessoas, ordená-las pelo nome.
-pessoas = [
-    {"nome": "Alice", "idade": 30},
-    {"nome": "Bob", "idade": 25},
-    {"nome": "Carol", "idade": 20}
-]
-pessoas.sort(key=lambda pessoa: pessoa["nome"])
+# pessoas = [
+#     {"nome": "Alice", "idade": 30},
+#     {"nome": "Bob", "idade": 25},
+#     {"nome": "Carol", "idade": 20}
+# ]
+# pessoas.sort(key=lambda pessoa: pessoa["nome"])
 
-print(pessoas)
+# print(pessoas)
+
+# Agregação de Dados
+# Dado um conjunto de números, calcular a média.
+numeros = [2,9,8,3,5,8,4,7]
+media = sum(numeros)/len(numeros)
+print(media)
