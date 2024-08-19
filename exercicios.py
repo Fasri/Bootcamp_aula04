@@ -33,7 +33,14 @@
 # print(contar_caracteres("engenharia de dados"))
 
 # 5.Dada a lista ["maçã", "banana", "cereja"] e o dicionário {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}, calcule o preço total da lista de compras.
-frutas = ["maçã", "banana", "cereja"]
-dici_frutas = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
-total = sum(dici_frutas[item] for item in frutas)
-print(f"Preço total: {total}")
+# frutas = ["maçã", "banana", "cereja"]
+# dici_frutas = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
+# total = sum(dici_frutas[item] for item in frutas)
+# print(f"Preço total: {total}")
+
+#Eliminação de Duplicatas
+#6. Dada uma lista de emails, remover todos os duplicados.
+emails = ["user@example.com", "admin@example.com", "user@example.com", "manager@example.com"]
+emails_unicos = list(set(emails)) 
+
+print(emails_unicos)
