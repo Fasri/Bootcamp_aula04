@@ -40,7 +40,18 @@
 
 #Eliminação de Duplicatas
 #6. Dada uma lista de emails, remover todos os duplicados.
-emails = ["user@example.com", "admin@example.com", "user@example.com", "manager@example.com"]
-emails_unicos = list(set(emails)) 
+# emails = ["user@example.com", "admin@example.com", "user@example.com", "manager@example.com"]
+# emails_unicos = list(set(emails)) #list cria a lista, set tira os valores duplicados
 
-print(emails_unicos)
+# print(emails_unicos)
+
+#Filtragem de Dados
+#7.Dada uma lista de idades, filtrar apenas aquelas que são maiores ou iguais a 18.
+idades = [4.6,90,45,34,56,3,25]
+maiores=[]
+for idade in idades:
+    if idade>18:
+        maiores.append(idade)
+    else:
+        maiores
+print(maiores)
