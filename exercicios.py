@@ -77,13 +77,25 @@
 # 10. Dada uma lista de valores, dividir em duas listas: 
 # uma para valores pares e outra para ímpares.
 
-numeros = [1,2,3,4,5,6,7,8,9,10]
-pares=[]
-impares = []
-for numero in numeros:
-    if numero%2 == 0:
-        pares.append(numero)
-    else:
-        impares.append(numero)
-print(pares)
-print(impares)
+# numeros = [1,2,3,4,5,6,7,8,9,10]
+# pares=[]
+# impares = []
+# for numero in numeros:
+#     if numero%2 == 0:
+#         pares.append(numero)
+#     else:
+#         impares.append(numero)
+# print(pares)
+# print(impares)
+
+# Atualização de Dados
+# 11. Dada uma lista de dicionários representando produtos, 
+# atualizar o preço de um produto específico.
+produtos = [{"Produto": "Geladeira","Preço":23},
+            {"Produto": "Cafeteira","Preço":15}, 
+            {"Produto": "Televisão","Preço":45}]
+
+for produto in produtos:
+    if produto["Produto"]=="Cafeteira":
+        produto["Preço"] = 69
+print(produtos)
