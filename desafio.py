@@ -72,3 +72,21 @@ def mensagem_do_valor_bonus(nome_usuario,salario_usuario,bonus):
     print(f"O usuário {nome_usuario} possui o bonus de {valor_do_bonus}")
 
 mensagem_do_valor_bonus("Felipe", 1000, 200)
+
+empregados = [{
+    "nome_usuario": "felipe",
+    "salario_usuario": 2000,
+    "bonus":200    
+},
+{
+    "nome_usuario": "Gilcilena",
+    "salario_usuario": 6000,
+    "bonus":300    
+}]
+
+for empregado in empregados:
+    nome = empregado["nome_usuario"]
+    salario = empregado["salario_usuario"]
+    bonus = empregado["bonus"]
+    mensagem_do_valor_bonus(nome, salario, bonus)
+ 
