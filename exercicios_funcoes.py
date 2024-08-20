@@ -34,14 +34,28 @@
 
 # 19.Implemente uma função que receba dois argumentos: uma lista de números e um número.
 # A função deve retornar todas as combinações de pares na lista que somem ao número dado.
-def fazer_pares(lista:list, numero:int):
-    soma =[]
-    for i in lista:
-        soma.append(i+numero)
-    return soma
-lista1=[4,5,6,7,10]
-numero1 = 9
-print(fazer_pares(lista1, numero1))
+# def fazer_pares(lista:list, numero:int):
+#     soma =[]
+#     for i in lista:
+#         soma.append(i+numero)
+#     return soma
+# lista1=[4,5,6,7,10]
+# numero1 = 9
+# print(fazer_pares(lista1, numero1))
 
 
 # 20.Escreva uma função que receba um dicionário e retorne uma lista de chaves ordenadas
+
+def ordernar_dic (dicionario: dict):
+    chaves = sorted(list(dicionario.keys()))
+
+    return chaves
+
+dicionario = {
+    "casa": "azul",
+    "quartos": 3,
+    "banheiros": 2,
+    "azuleijo": True
+}
+
+print(ordernar_dic(dicionario))
