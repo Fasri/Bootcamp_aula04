@@ -8,7 +8,8 @@ lista = [1,2,3,4,5]
 * Uma lista começa com a posição 0
 * list() -> cria listas
 * set()-> retirar duplicadas
-* sort()-> ordena a lista
+* sort()-> ordena a lista, modifica a lista original
+* sorted(lista)-> ordena a lista, retorna uma nova lista ordenada
 
 ## Dicionário
 
