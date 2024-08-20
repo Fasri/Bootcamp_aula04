@@ -12,19 +12,25 @@
 # 17.Crie uma função que receba um número como argumento e retorne True se o número for primo 
 # e False caso contrário.
 
-def eh_primo(numero:int):
-    if numero <= 1:
-        return False
-    for i in range(2, int(numero ** 0.5) + 1):
-        if numero % i == 0:
-            return False
-    return True
+# def eh_primo(numero:int):
+#     if numero <= 1:
+#         return False
+#     for i in range(2, int(numero ** 0.5) + 1):
+#         if numero % i == 0:
+#             return False
+#     return True
     
 
-print(eh_primo(17))
+# print(eh_primo(17))
 
-# 18.Desenvolva uma função que receba uma string como argumento e retorne essa string revertida.
+# 18.Desenvolva uma função que receba uma string como argumento e 
+# retorne essa string revertida.
 
+def reverte_string(original:str):
+    return original[::-1]
+
+print(reverte_string("teste"))
+print(reverte_string("Gilcilena"))
 # 19.Implemente uma função que receba dois argumentos: uma lista de números e um número. A função deve retornar todas as combinações de pares na lista que somem ao número dado.
 
 # 20.Escreva uma função que receba um dicionário e retorne uma lista de chaves ordenadas
