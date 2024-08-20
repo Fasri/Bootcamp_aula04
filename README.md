@@ -22,3 +22,12 @@ dict = {
 * Uma lista é um dicionário chave é a posição e o valor é o item.
 * key() -> retorna as chaves do dicionário
 * values() -> retorna os valores do dicionário
+
+## Funções
+
+A função ajuda na modularização e reutilização do código.
+### Estrutura
+
+def funcao ():
+o que vai acontecer
+return
