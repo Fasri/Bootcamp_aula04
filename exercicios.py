@@ -103,14 +103,22 @@
 # Fusão de Dicionários
 # 12. Dados dois dicionários, fundi-los em um único dicionário.
 
-dicionario1 = {
-    "Produt1":"Ferro",
-    "Preço1":23
-}
-dicionario2 = {
-    "Produto":"Regador",
-    "Preço":5
-}
+# dicionario1 = {
+#     "Produt1":"Ferro",
+#     "Preço1":23
+# }
+# dicionario2 = {
+#     "Produto":"Regador",
+#     "Preço":5
+# }
 
-dicionario1.update(dicionario2)
-print (dicionario1)
+# dicionario1.update(dicionario2)
+# print (dicionario1)
+
+# Filtragem de Dados em Dicionário
+# 13.Dado um dicionário de estoque de produtos, 
+# filtrar aqueles com quantidade maior que 0.
+
+estoque = {"Cadeira":3, "Televisão":0, "Celular": 4, "Monitor": 0}
+positivo= {produto: quantidade for produto,quantidade in estoque.items() if quantidade > 0}
+print(positivo)
